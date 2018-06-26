@@ -8,6 +8,7 @@ import os
 from multiprocessing import Pool
 import random
 import time
+import multiprocessing
 
 
 def get_page_html(url):
@@ -70,6 +71,8 @@ def main(i):
 
 
 if __name__ == '__main__':
+    # On Windows calling this function is necessary.
+    multiprocessing.freeze_support()
     start_page = 1
     end_page = 47
     pool = Pool()
