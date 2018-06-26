@@ -71,7 +71,7 @@ def main(i):
 
 
 if __name__ == '__main__':
-    # On Windows calling this function is necessary.
+    # On Windows calling this function is necessary
     multiprocessing.freeze_support()
     start_page = 1
     end_page = 47
